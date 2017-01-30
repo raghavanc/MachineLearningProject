@@ -1,0 +1,19 @@
+---
+title: "Weight lifting exercise Project"
+author: "Raghavan"
+date: "1/26/2017"
+output: html_document
+---
+
+# Introduction 
+The goal of this project is to predict the manner in which the participants did the exercise. Participants are given specific instruction to perform the weight lifting in five different ways. Various measurements are been taken during this period. 
+
+Need to build a model using all the significant parameters and predict the "classe" variable in the training set. 
+
+## Feature Selection 
+The training set has 160 veriables for each observation. I used the Boruta algorithm to perform a feature selection. The below graph mentions all the list of valid variables that can be used in the model. On observing the graph, I found that the first five variables that had a highest importance for predicting the "classe" variable didn't make sense. Hence I removed those five variables and used 54 variables in the random forest model. 
+
+![Variables which are being used in the model](/Users/raghavanchandran/Projectplot.png)
+
+The model provided an accuracy of 99.8%. 
+
